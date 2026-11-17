@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b1a0f;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #061208;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #2ecc71;
+}
+
+.logo h1 {
+    color: #2ecc71;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.jogo {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #122418;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.info-jogo {
+    padding: 30px;
+    text-align: center;
+}
+
+.info-jogo h2 {
+    color: #f1c40f;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.info-jogo p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #b0d4b8;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #061208;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+.empresa {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #122418;
+    border-radius: 10px;
+    border-left: 5px solid #f1c40f;
+    text-align: center;
+}
+
+.empresa h2 {
+    color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #061208;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    border-top: 1px solid #2ecc71;
+}
