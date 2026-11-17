@@ -1,3 +1,4 @@
+/* Reset e Fontes */
 * {
     margin: 0;
     padding: 0;
@@ -11,84 +12,158 @@ body {
     line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
     background-color: #061208;
     padding: 20px;
     display: flex;
     justify-content: center;
     border-bottom: 3px solid #2ecc71;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .logo h1 {
     color: #2ecc71;
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.jogo {
-    max-width: 900px;
-    margin: 40px auto;
-    background-color: #122418;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-}
-
-.info-jogo {
-    padding: 30px;
+    letter-spacing: 3px;
     text-align: center;
 }
 
-.info-jogo h2 {
+.subtitulo {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Seção Hero (Destaque) */
+.hero {
+    background: linear-gradient(135deg, #0b1a0f 0%, #1a3a24 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2ecc71;
+}
+
+.hero-content h2 {
     color: #f1c40f;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
-.info-jogo p {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
+.hero-content p {
+    font-size: 1.2rem;
     color: #b0d4b8;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
 }
 
+/* Botão */
 .botao {
     display: inline-block;
     background-color: #2ecc71;
     color: #061208;
-    padding: 12px 30px;
+    padding: 15px 40px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: transform 0.2s, background-color 0.2s;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
 }
 
 .botao:hover {
     background-color: #27ae60;
-    transform: scale(1.05);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.6);
 }
 
+/* Seção de Destaques (Cards) */
+.destaques {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.destaques h2 {
+    color: #2ecc71;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para ficar responsivo em celular */
+}
+
+.card {
+    background-color: #122418;
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    border-top: 4px solid #f1c40f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #b0d4b8;
+    font-size: 1rem;
+}
+
+/* Seção Empresa */
 .empresa {
     max-width: 800px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 40px;
     background-color: #122418;
     border-radius: 10px;
-    border-left: 5px solid #f1c40f;
+    border-left: 5px solid #2ecc71;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .empresa h2 {
     color: #2ecc71;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.empresa p {
+    color: #b0d4b8;
+    font-size: 1.1rem;
     margin-bottom: 15px;
 }
 
+.creditos-equipe {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #2ecc71;
+    color: #f1c40f !important;
+    font-size: 1.2rem !important;
+}
+
+/* Rodapé */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #061208;
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 0.9rem;
     color: #7f8c8d;
     border-top: 1px solid #2ecc71;
