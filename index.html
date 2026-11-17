@@ -1,70 +1,170 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luz e Sombra do Pântano - Smile Studios</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Reset e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div class="logo">
-            <h1>Smile Studios</h1>
-            <p class="subtitulo">Uma jornada criada por um desenvolvedor independente.</p>
-        </div>
-    </header>
+body {
+    background-color: #0b1a0f;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
 
-    <!-- SEÇÃO HERO (Destaque principal) -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Luz e Sombra do Pântano 🐸</h2>
-            <p>
-                Junte-se a Kero, o Sapo Ninja, em uma missão épica para salvar o Pântano dos Juncos! 
-                Enfrente o exército do Pink Man e descubra a verdade sombria por trás do ataque.
-            </p>
-            <a href="#" class="botao">Baixar o Jogo Agora</a>
-        </div>
-    </section>
+/* Cabeçalho */
+header {
+    background-color: #061208;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #2ecc71;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
 
-    <!-- SEÇÃO DE DESTAQUES (Os "Cards") -->
-    <section class="destaques">
-        <h2>Por que jogar?</h2>
-        <div class="cards-container">
-            <div class="card">
-                <h3>⚔️ Ação Plataforma</h3>
-                <p>Pule, atire e desvie de lasers em fases desafiadoras.</p>
-            </div>
-            <div class="card">
-                <h3>👑 Bosses Épicos</h3>
-                <p>Enfrente o Pink Man e o temível Sapo Sombrio.</p>
-            </div>
-            <div class="card">
-                <h3>🌿 Mundo Único</h3>
-                <p>Explore o Pântano dos Juncos e descubra seus segredos.</p>
-            </div>
-        </div>
-    </section>
+.logo h1 {
+    color: #2ecc71;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
 
-    <!-- SEÇÃO SOBRE -->
-    <section class="empresa">
-        <h2>Sobre a Smile Studios</h2>
-        <p>
-            Smile Studios é um projeto independente apaixonado por criar experiências únicas e memoráveis. 
-            <strong>Luz e Sombra do Pântano</strong> é o meu primeiro projeto solo, feito com muita dedicação 
-            e a vontade de trazer alegria para os jogadores.
-        </p>
-        <p class="creditos-equipe">
-            Feito com carinho por Smile Studios.
-        </p>
-    </section>
+.subtitulo {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+}
 
-    <!-- RODAPÉ -->
-    <footer>
-        <p>&copy; 2026 Smile Studios. Todos os direitos reservados.</p>
-        <p>Contato: contato@smilestudios.com</p>
-    </footer>
+/* Seção Hero (Destaque) */
+.hero {
+    background: linear-gradient(135deg, #0b1a0f 0%, #1a3a24 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2ecc71;
+}
 
-</body>
-</html>
+.hero-content h2 {
+    color: #f1c40f;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #b0d4b8;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+/* Botão */
+.botao {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #061208;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+}
+
+.botao:hover {
+    background-color: #27ae60;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.6);
+}
+
+/* Seção de Destaques (Cards) */
+.destaques {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.destaques h2 {
+    color: #2ecc71;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para ficar responsivo em celular */
+}
+
+.card {
+    background-color: #122418;
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    border-top: 4px solid #f1c40f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #b0d4b8;
+    font-size: 1rem;
+}
+
+/* Seção Empresa */
+.empresa {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #122418;
+    border-radius: 10px;
+    border-left: 5px solid #2ecc71;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.empresa h2 {
+    color: #2ecc71;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.empresa p {
+    color: #b0d4b8;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.creditos-equipe {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #2ecc71;
+    color: #f1c40f !important;
+    font-size: 1.2rem !important;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #061208;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    border-top: 1px solid #2ecc71;
+}
