@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luz e Sombra do Pântano - Smile Studios</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,37 +15,110 @@
             <h1>Smile Studios</h1>
             <p class="subtitulo">Uma jornada criada por um desenvolvedor independente.</p>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#requisitos">Requisitos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- SEÇÃO HERO (Destaque principal) -->
+    <!-- SEÇÃO HERO -->
     <section class="hero">
         <div class="hero-content">
-            <h2>Luz e Sombra do Pântano 🐸</h2>
-            <p>
-                Junte-se a Kero, o Sapo Ninja, em uma missão épica para salvar o Pântano dos Juncos! 
-                Enfrente o exército do Pink Man e descubra a verdade sombria por trás do ataque.
-            </p>
-            <!-- O BOTÃO COM O LINK CORRIGIDO (lidiane1244) -->
+            <h2>Luz e Sombra do Pântano</h2>
+            <p class="hero-subtitle">A aventura do Sapo Ninja Kero começa aqui.</p>
             <a href="https://github.com/lidiane1244souza-a11y/site-luz-e-sombra/releases/tag/v1.0" class="botao">Baixar o Jogo Agora</a>
         </div>
     </section>
 
-    <!-- SEÇÃO DE DESTAQUES (Os "Cards") -->
-    <section class="destaques">
-        <h2>Por que jogar?</h2>
+    <!-- SEÇÃO HISTÓRIA -->
+    <section id="historia" class="secao-texto">
+        <h2>A História</h2>
+        <p>
+            No coração do Pântano dos Juncos, vive Kero, um jovem e promissor sapo ninja. 
+            Sua vida tranquila é virada do avesso quando uma tinta cor-de-rosa começa a corromper as águas e os animais. 
+            O culpado é o alienígena <strong>Pink Man</strong>, que quer transformar o pântano em um parque de diversões cósmico.
+        </p>
+        <p>
+            Mas a ameaça vai muito além do que os olhos podem ver. Ao derrotar Pink Man, Kero descobre que ele era apenas um fantoche. 
+            O verdadeiro mal é o <strong>Sapo Sombrio</strong>, um antigo guerreiro do Clã dos Juncos corrompido pela ganância. 
+            Agora, Kero precisa enfrentar seu próprio passado para salvar o pântano e provar que a luz é mais forte que a escuridão.
+        </p>
+    </section>
+
+    <!-- SEÇÃO PERSONAGENS -->
+    <section id="personagens" class="destaques">
+        <h2>Conheça os Personagens</h2>
         <div class="cards-container">
             <div class="card">
-                <h3>⚔️ Ação Plataforma</h3>
-                <p>Pule, atire e desvie de lasers em fases desafiadoras.</p>
+                <h3>🐸 Kero</h3>
+                <p>O protagonista. Um sapo ninja ágil, leal e determinado a proteger seu lar.</p>
             </div>
             <div class="card">
-                <h3>👑 Bosses Épicos</h3>
-                <p>Enfrente o Pink Man e o temível Sapo Sombrio.</p>
+                <h3>👾 Pink Man</h3>
+                <p>Um alienígena vaidoso que quer transformar o pântano em um mundo cor-de-rosa.</p>
             </div>
             <div class="card">
-                <h3>🌿 Mundo Único</h3>
-                <p>Explore o Pântano dos Juncos e descubra seus segredos.</p>
+                <h3>🌑 Sapo Sombrio</h3>
+                <p>O verdadeiro vilão. Um antigo guerreiro corrompido que usa o laser das sombras.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE GALERIA -->
+    <section id="galeria" class="galeria">
+        <h2>Galeria do Jogo</h2>
+        <div class="galeria-container">
+            <div class="print">Print do Jogo 1</div>
+            <div class="print">Print do Jogo 2</div>
+            <div class="print">Print do Jogo 3</div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO REQUISITOS DO SISTEMA -->
+    <section id="requisitos" class="secao-texto">
+        <h2>Requisitos do Sistema</h2>
+        <div class="requisitos-grid">
+            <div>
+                <h3>Mínimos</h3>
+                <ul>
+                    <li>Sistema: Windows 7 ou superior</li>
+                    <li>Processador: Intel Core 2 Duo</li>
+                    <li>Memória: 2 GB de RAM</li>
+                    <li>Placa de vídeo: Compatível com OpenGL 3.3</li>
+                    <li>Armazenamento: 100 MB</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Recomendados</h3>
+                <ul>
+                    <li>Sistema: Windows 10/11</li>
+                    <li>Processador: Intel Core i3</li>
+                    <li>Memória: 4 GB de RAM</li>
+                    <li>Placa de vídeo: Dedicada</li>
+                    <li>Armazenamento: 100 MB</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FAQ -->
+    <section id="faq" class="secao-texto">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <div class="faq-item">
+            <h3>O jogo é gratuito?</h3>
+            <p>Sim! O jogo é totalmente gratuito e pode ser baixado no botão acima.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Em quais plataformas posso jogar?</h3>
+            <p>Atualmente, o jogo está disponível para Windows (PC).</p>
+        </div>
+        <div class="faq-item">
+            <h3>Quais são os controles?</h3>
+            <p>Use as setas ou A/D para andar, Espaço para pular e X para atirar.</p>
         </div>
     </section>
 
@@ -56,9 +130,6 @@
             <strong>Luz e Sombra do Pântano</strong> é o meu primeiro projeto solo, feito com muita dedicação 
             e a vontade de trazer alegria para os jogadores.
         </p>
-        <p class="creditos-equipe">
-            Feito com carinho por Smile Studios.
-        </p>
     </section>
 
     <!-- RODAPÉ -->
@@ -69,4 +140,3 @@
 
 </body>
 </html>
-
